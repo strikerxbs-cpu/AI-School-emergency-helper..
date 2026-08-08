@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI School Emergency Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- হেডার অংশ -->
+    <header class="header">
+        <div class="team-badge">🤖 Team: AI Horizon</div>
+        <h1>🏥 AI School Emergency Helper</h1>
+        <p class="school-name">ফাইয়াজ স্কুল এন্ড কলেজ, রংপুর</p>
+    </header>
+
+    <main class="container">
+        <!-- ক্যাটাগরি বাটনসমূহ -->
+        <div class="section-title">
+            ⚠️ জরুরি ক্যাটাগরি বেছে নিন
+        </div>
+
+        <div class="category-grid">
+            <button class="cat-btn fire" onclick="selectCategory('fire')">
+                <span class="icon">🔥</span>
+                <span>আগুন 🔥</span>
+            </button>
+
+            <button class="cat-btn accident" onclick="selectCategory('accident')">
+                <span class="icon">🩹</span>
+                <span>দুর্ঘটনা/আঘাত 🩹</span>
+            </button>
+
+            <button class="cat-btn electric" onclick="selectCategory('electric')">
+                <span class="icon">⚡</span>
+                <span>বিদ্যুৎ ⚡</span>
+            </button>
+
+            <button class="cat-btn storm" onclick="selectCategory('storm')">
+                <span class="icon">🌧️</span>
+                <span>ঝড়/বন্যা 🌧️</span>
+            </button>
+        </div>
+
+        <!-- স্মার্ট হেল্প ও ভয়েস অ্যাসিস্ট্যান্ট -->
+        <div class="assistant-card">
+            <div class="assistant-header">
+                <span class="brain-icon">🧠</span>
+                <h3>Smart Help & Voice Assistant</h3>
+            </div>
+
+            <input type="text" id="userInput" placeholder="এখানে আপনার সমস্যা লিখুন...">
+
+            <button class="btn btn-voice" onclick="startSpeechRecognition()">
+                🎤 কথা বলে সমস্যা জানান
+            </button>
+
+            <button class="btn btn-smart" onclick="triggerSmartHelp()">
+                ⚙️ Smart Help
+            </button>
+
+            <!-- রেজাল্ট ও ভয়েস বাটন -->
+            <div id="resultBox" class="result-box" style="display: none;">
+                <p id="instructionText"></p>
+                <button class="btn btn-speak" onclick="speakInstructions()">
+                    🔊 নির্দেশনা শুনুন (Voice Output)
+                </button>
+            </div>
+        </div>
+
+        <!-- জরুরি ডায়াল নম্বর -->
+        <div class="contacts-card">
+            <h3>📞 জরুরি যোগাযোগ নম্বর</h3>
+            <div class="contact-item">
+                <span class="contact-name">🛡️ জাতীয় জরুরি সেবা</span>
+                <span class="contact-num">৯৯৯ (999)</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-name">🚒 ফায়ার সার্ভিস (রংপুর)</span>
+                <span class="contact-num">০১৭৩০-০০০০০</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+  </html>
