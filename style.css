@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 4px solid #f59e0b;
+}
+
+.team-badge {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.school-name {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #334155;
+    margin: 10px 0 15px 0;
+}
+
+.category-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cat-btn {
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.fire { background: linear-gradient(to right, #ff416c, #ff4b2b); }
+.accident { background: linear-gradient(to right, #ff8c00, #e52e71); }
+.electric { background: linear-gradient(to right, #f7b733, #fc4a1a); }
+.storm { background: linear-gradient(to right, #2b5876, #4e4376); }
+
+.assistant-card {
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.assistant-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.assistant-header h3 {
+    margin: 0;
+    color: #1e293b;
+    font-size: 16px;
+}
+
+#userInput {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.btn-voice { background-color: #dc2626; }
+.btn-smart { background-color: #2563eb; }
+.btn-speak { background-color: #059669; margin-top: 10px; }
+
+.result-box {
+    background: #f0fdf4;
+    border-left: 4px solid #16a34a;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 12px;
+    white-space: pre-line;
+    color: #1e293b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contacts-card {
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+}
